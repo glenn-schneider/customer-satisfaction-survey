@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description"><i>Let us know how we can improve our service</i></p>
+  </head>
+
+  <body>
+    <div class="survey">
+    <form id="survey-form" action="Submit">
+      <div class="question">
+        <div class="question_text">
+          <label id="name-label" for="name">* Name:</label>
+        </div>
+        <div class="input_field">
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question_text">
+          <label id="email-label" for="email">* Email:</label>
+        </div>
+        <div class="input_field">
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question_text">
+          <label id="number-label" for="number">Age: </label>
+        </div>
+        <div class="input_field">
+          <input type="number" id="number" placeholder="Enter your age" min="14", max="150">
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question_text">
+          <label id="time_used_label" for="dropdown">How often do you use our product? </label>
+        </div>
+        <div class="input_field">
+          <select name="time_used" id="dropdown">
+            <option value="preset" disabled selected hidden>Select an option</option>
+            <option value="less_than_year">less than once a year</option>
+            <option value="less_than_year">At least once a year</option>
+            <option value="less_than_year">At least once a month</option>
+            <option value="less_than_year">At least once a week</option>
+            <option value="less_than_year">Every day</option>
+          </select>
+        </div>
+      </div>      
+      
+      <div class="question">
+        <div class="question_text">
+          <label id="select-label" for="recommend">How likely are you to recommend our product? </label>
+        </div>
+        <div class="input_field">
+          <input type="radio", id="very_likely" name="recommend" value="4">
+          <label for="very_likely">Very likely</label><br>
+          <input type="radio", id="likely" name="recommend" value="3">
+          <label for="likely">Likely</label><br>
+          <input type="radio", id="not_sure" name="recommend" value="2">
+          <label for="not_sure">Not sure</label><br>
+          <input type="radio", id="unlikely" name="recommend" value="1">
+          <label for="unlikely">Unlikely</label><br>
+          <input type="radio", id="very_unlikely" name="recommend" value="0">
+          <label for="very_unlikely">Very unlikely</label><br>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question_text">
+          <label for="improve">What would you like to see improved? (Check all that apply)
+          </label>
+        </div>
+        <div class="input_field">
+          <input type="checkbox" name="improve" value="123">Amount of features<br> 
+          <input type="checkbox" name="improve" value="123">Cost of Product<br> 
+          <input type="checkbox" name="improve" value="123">Customer Support<br> 
+          <input type="checkbox" name="improve" value="123">Design<br> 
+          <input type="checkbox" name="improve" value="123">Website<br> 
+          <input type="checkbox" name="improve" value="123">Accessibility options<br> 
+          <input type="checkbox" name="improve" value="123">User instructions<br> 
+          <input type="checkbox" name="improve" value="123">Installation instructions<br>
+          <input type="checkbox" name="improve" value="123">Customization options<br> 
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question_text">
+          <label id="feedback-label" for="feedback">Any other comments or suggestions?</label>
+        </div>
+        <div class="input_field">
+          <textarea rows="7" cols="30" name="feedback" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><button class="button" id="submit" type="submit">Submit</button></p>
+      </div>
+
+    </div>
+    </form>
+  </body>
+</html>
