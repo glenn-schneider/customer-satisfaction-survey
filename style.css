@@ -1,0 +1,62 @@
+h1, p {
+  text-align: center;
+  color: FFFFFF;
+}
+
+p {
+   margin-top: -10px;
+}
+
+.question_text, .input_field, .checkboxes {
+  display: inline-block;
+}
+
+.question_text {
+  text-align: right;
+  width: 48%;
+  padding-right: 10px;
+}
+
+.input_field {
+  width: 48%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.question {
+  padding: 10px;
+}
+
+
+body {
+  background-image: url(https://images.pexels.com/photos/3823489/pexels-photo-3823489.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: sans-serif;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  background-color: rgba(90, 105, 191, 0.8);
+  background-blend-mode: multiply;
+}
+
+.survey {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: rgba(30, 25, 77, 0.8);
+  border-radius: 10px;
+  color: FFFFFF;
+}
+
+#submit {
+  align-items: center;
+  font-size: 14px;
+  background-color: #4CAF50;
+  height: 40px;
+  width: 200px;
+  color: FFFFFF;
+  border-width: 0px;
+}
